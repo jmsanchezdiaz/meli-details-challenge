@@ -1,4 +1,5 @@
 import {extendTheme, theme} from "@chakra-ui/react";
+import {mode} from "@chakra-ui/theme-tools";
 
 export default extendTheme({
   styles: {
@@ -9,6 +10,11 @@ export default extendTheme({
     },
   },
   colors: {
+    darkmode: {
+      darkgray: "#222831",
+      gray: "#393E46",
+      lightyellow: "#FFD369",
+    },
     primary: {
       50: "#FFF9BD",
       100: "#FFF693",
@@ -40,6 +46,11 @@ export default extendTheme({
     heading: "Proxima Nova",
   },
   components: {
+    Text: {
+      baseStyle: (props) => ({
+        color: mode("black", "white")(props),
+      }),
+    },
     Link: {
       variants: {
         unstyled: ({colorScheme = "blackAlpha"}) => ({
@@ -61,6 +72,11 @@ export default extendTheme({
         variant: "color",
       },
     },
+    Heading: {
+      baseStyle: (props) => ({
+        color: mode("black", "white")(props),
+      }),
+    },
     Button: {
       sizes: {
         lg: {
@@ -68,11 +84,21 @@ export default extendTheme({
         },
       },
       variants: {
-        ghost: ({colorScheme = "secondary"}) => ({
-          backgroundColor: `${colorScheme}.50`,
-          ":hover, :focus": {
-            backgroundColor: `${colorScheme}.100`,
+        solid: (props) => ({
+          bg: mode("blue.500", "blue.400")(props),
+          color: mode("white", "gray.900")(props),
+          _hover: {
+            bg: mode("blue.400", "blue.700")(props),
           },
+        }),
+        ghost: ({colorScheme = "secondary", ...rest}) => ({
+          backgroundColor: mode(`${colorScheme}.50`, `${colorScheme}.600`)(rest),
+          ":hover, :focus": {
+            backgroundColor: mode(`${colorScheme}.100`, `${colorScheme}.700`)(rest),
+          },
+        }),
+        unstyled: (props) => ({
+          color: mode("black", "white")(props),
         }),
       },
     },

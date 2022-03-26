@@ -6,9 +6,12 @@ export default {
       id: "MLA741093357",
       site_id: "MLA",
       title: "Peluche Stitch Angel Lilo 1 Metro 100cm Reales Gigante",
+      similars: ["peluches gigantes", "mikecrack", "disney", " peluches"],
       subtitle: null,
+      rating: 4.3,
       seller_id: 298424621,
       category_id: "MLA1166",
+      categories: ["Juegos y peluches", "Peluches", "Stitch"],
       official_store_id: null,
       price: 13999,
       base_price: 13999,
@@ -59,6 +62,80 @@ export default {
           secure_url: "https://http2.mlstatic.com/D_918230-MLA31424182281_072019-O.jpg",
           size: "281x500",
           max_size: "1080x1920",
+          quality: "",
+        },
+      ],
+      other_products: [
+        {
+          id: "978173-MLA32582347639_102019",
+          url: "http://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
+          size: "500x496",
+          max_size: "1200x1192",
+          quality: "",
+        },
+        {
+          id: "754004-MLA32299823528_092019",
+          url: "http://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
+          size: "500x396",
+          max_size: "1200x951",
+          quality: "",
+        },
+        {
+          id: "616691-MLA279005381255_082018",
+          url: "http://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          size: "500x500",
+          max_size: "800x800",
+          quality: "",
+        },
+        {
+          id: "918230-MLA314224182281_072019",
+          url: "http://http2.mlstatic.com/D_918230-MLA31424182281_072019-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_918230-MLA31424182281_072019-O.jpg",
+          size: "281x500",
+          max_size: "1080x1920",
+          quality: "",
+        },
+        {
+          id: "9781573-MLA325823476339_102019",
+          url: "http://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_978173-MLA32582347639_102019-O.jpg",
+          size: "500x496",
+          max_size: "1200x1192",
+          quality: "",
+        },
+        {
+          id: "7540104-MLA322299823528_092019",
+          url: "http://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_754004-MLA32299823528_092019-O.jpg",
+          size: "500x396",
+          max_size: "1200x951",
+          quality: "",
+        },
+        {
+          id: "6166921-MLA279020381255_082018",
+          url: "http://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          size: "500x500",
+          max_size: "800x800",
+          quality: "",
+        },
+        {
+          id: "61266921-MLA279020381255_082018",
+          url: "http://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          size: "500x500",
+          max_size: "800x800",
+          quality: "",
+        },
+        {
+          id: "64166921-MLA279020381255_082018",
+          url: "http://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          secure_url: "https://http2.mlstatic.com/D_616691-MLA27900381255_082018-O.jpg",
+          size: "500x500",
+          max_size: "800x800",
           quality: "",
         },
       ],
@@ -402,6 +479,11 @@ export default {
         "immediate_payment",
         "cart_eligible",
       ],
+      seller_info: {
+        dispatchInTime: true,
+        goodClientAtention: true,
+        sellsQuantity: 1360,
+      },
       warranty: null,
       catalog_product_id: null,
       domain_id: "MLA-STUFFED_TOYS",
@@ -414,6 +496,117 @@ export default {
       health: 0.88,
       catalog_listing: false,
       channels: ["marketplace"],
+      opinions: [
+        {
+          id: "ol1v064",
+          title: "Mal Cocido",
+          description:
+            "El peluche la verdad es muy parecido al de las fotos, pero ami me vino todo descosido, al otro día de comprarlo ya estaba roto, la verdad mis peores 900 pesos, no vale la pena.",
+          rating: 1,
+          likes: 2,
+          dislikes: 0,
+        },
+        {
+          id: "58fj2i0",
+          title: "Excelente",
+          description:
+            "Excelente equilibrio entre precio y calidad. Mi hija está enamorada de su stitch y no sólo duerme con él sino que lo lleva a todos lados.",
+          rating: 5,
+          likes: 1,
+          dislikes: 1,
+        },
+        {
+          id: "vyl7iuj",
+          title: "Regular",
+          description:
+            "No era lo que esperaba muy chiquito , por suerte que era para una niña pequeña y un niño pequeño. Pero la foto se ven mas grande.",
+          rating: 3,
+          likes: 1,
+          dislikes: 0,
+        },
+        {
+          id: "scvbzl6",
+          title: "NO es el peluche de la foto.",
+          description:
+            "Deberian poner fotos reales. Tuve que darle puntadas a la cabeza para darle forma.",
+          rating: 2,
+          likes: 2,
+          dislikes: 0,
+        },
+        {
+          id: "nzj8d19",
+          title: "Malo",
+          description:
+            "Mala calidad. Ni lo usamos y se descocieron todos. Se ven lindos pero la calidad mala.",
+          rating: 2,
+          likes: 2,
+          dislikes: 0,
+        },
+        {
+          id: "Kzj8d19",
+          title: "Mas o menos",
+          description:
+            "Decía q era disney en la descripcion. Y es como de la salada. Pense q era de mayor calidad.Hace 7 meses",
+          rating: 3.7,
+          likes: 0,
+          dislikes: 0,
+        },
+      ],
+      questions: [
+        {
+          id: "pl3jw32",
+          content:
+            "Buenas noches. Quisiera uno azul y otra rosa, pero con orejas caídas. Si los tenes esos, ahora oferto. Gracias!",
+          answer: {
+            content: "Hola si tenemos stock de orejas caídas",
+            answerAt: "23/05/20",
+          },
+        },
+        {
+          id: "plft3jw",
+          content: "Hola, que precio me podes hacer por cantidad, aprox 20 muñecos",
+          answer: {
+            content: "Hola si tenemos stock, un 20% . Saludos",
+            answerAt: "23/12/20",
+          },
+        },
+        {
+          id: "68jt74w",
+          content: "Perfecto ya te hago la compra por el rosado",
+          answer: {
+            content:
+              "Hola si tenemos stock, si después de la compra nos Tenes que enviar un mensaje en la misma solicitando el Color",
+            answerAt: "05/03/20",
+          },
+        },
+        {
+          id: "4q2o7tp",
+          content: "Hola cómo estás? El rosado te quedó?",
+          answer: {
+            content: "Hola si tenemos stock",
+            answerAt: "05/03/20",
+          },
+        },
+        {
+          id: "my8kl2e",
+          content:
+            "Hay varias imágenes...cual de todas sería? Yo quiero el q tiene las orejas largas y caídas...xq hay unas fotos q tiene orejas más cortas y paradas",
+          answer: {
+            content:
+              "Hola si tenemos stock, el producto se envía según el stock disponible . Ahora tenemos el de la 1ra imagen",
+            answerAt: "05/03/20",
+          },
+        },
+        {
+          id: "ofxidxq",
+          content:
+            "Hola tenés en los dos colores? Si lo compro hoy cuando lo puedo pasar a buscar x el local?",
+          answer: {
+            content: "Hola si tenemos stock, si a partir del lunes",
+            answerAt: "05/03/20",
+          },
+        },
+      ],
     };
   },
 };

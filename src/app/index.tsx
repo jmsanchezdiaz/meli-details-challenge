@@ -1,18 +1,22 @@
 import React from "react";
-import {Container, Stack, Box} from "@chakra-ui/react";
+import {Stack, Container, Box, useColorModeValue} from "@chakra-ui/react";
+
+import Header from "../components/header";
 
 import Routes from "./routes";
 
 const App: React.FC = () => {
+  const bodyColorMode = useColorModeValue("gray.200", "darkmode.gray");
+
   return (
-    <Container alignSelf="center" maxWidth="container.xl" paddingX={0}>
-      <Stack>
-        <Box>{`< Navbar />`}</Box>
-        <Box>
+    <Stack spacing={0}>
+      <Header />
+      <Box bg={bodyColorMode}>
+        <Container maxW="container.xl" py={2}>
           <Routes />
-        </Box>
-      </Stack>
-    </Container>
+        </Container>
+      </Box>
+    </Stack>
   );
 };
 

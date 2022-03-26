@@ -19,6 +19,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "linebreak-style": 0,
     "no-console": "warn",
     "react/prop-types": "off",
     "prettier/prettier": [
