@@ -26,9 +26,16 @@ const DetailsScreen: React.FC<Props> = ({product = mock.product}) => {
       <ProductHeader {...product} />
       <Box bg={bgColorMode} borderRadius="lg" p={4}>
         <Stack direction="row" spacing={10}>
-          <Stack align="flex-start" direction="column" divider={<Divider />} flex={1} spacing={10}>
+          <Stack
+            align="flex-start"
+            direction="column"
+            divider={<Divider />}
+            flex={1}
+            maxW="3xl"
+            spacing={10}
+          >
             <ImagePicker {...product} />
-            <SellerOtherProducts elementsToShow={3} otherProducts={product.other_products} />
+            <SellerOtherProducts otherProducts={product.other_products} />
             <ProductAttributes {...product} />
             <Stack pl={14} spacing={4}>
               <Heading fontSize="2xl" fontWeight="400">
@@ -44,11 +51,11 @@ const DetailsScreen: React.FC<Props> = ({product = mock.product}) => {
             <ProductQuestions {...product} />
             <ProductOpinions {...product} />
           </Stack>
-          <Stack w="sm">
+          <Stack as="aside" maxW="sm" zIndex={11}>
             <PurchasePanel {...product} />
             <SellerInfoPanel {...product} />
             <Level6PromoPanel />
-            <OtherInfoPanel />
+            <OtherInfoPanel product={product} />
           </Stack>
         </Stack>
       </Box>

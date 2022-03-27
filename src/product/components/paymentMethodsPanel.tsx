@@ -3,9 +3,11 @@ import {Box, Heading, Image, Link, Stack, Text} from "@chakra-ui/react";
 
 import {images} from "../../images";
 
+import {InsidePanelLayout} from "./layout/panelLayout";
+
 const PaymentMethodsPanel = () => {
   return (
-    <Stack p={4} spacing={8}>
+    <InsidePanelLayout>
       <Heading fontSize="xl" fontWeight="500">
         Medios de pago
       </Heading>
@@ -42,7 +44,7 @@ const PaymentMethodsPanel = () => {
         </Stack>
       </Stack>
       <Link>Conoce otros medios de pago</Link>
-    </Stack>
+    </InsidePanelLayout>
   );
 };
 

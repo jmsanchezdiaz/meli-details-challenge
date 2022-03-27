@@ -1,9 +1,11 @@
-import {Box, Heading, Link, Stack, Text} from "@chakra-ui/react";
+import {Box, Heading, Link, Text} from "@chakra-ui/react";
 import React from "react";
+
+import {InsidePanelLayout} from "./layout/panelLayout";
 
 const WarrantyPanel = () => {
   return (
-    <Stack p={4} spacing={8}>
+    <InsidePanelLayout>
       <Heading fontSize="xl" fontWeight="500">
         Garantía
       </Heading>
@@ -16,7 +18,7 @@ const WarrantyPanel = () => {
         <Text color="gray.400">Garantía del vendedor: 1 meses</Text>
       </Box>
       <Link>Conocer más sobre garantía</Link>
-    </Stack>
+    </InsidePanelLayout>
   );
 };
 

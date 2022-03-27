@@ -29,6 +29,13 @@ export interface IProductOpinion extends Record<string, any> {
   dislikes: number;
 }
 
+export interface ISimpleProduct extends Record<string, any> {
+  id: string;
+  price: number;
+  url: string;
+  short_description: string;
+}
+
 export interface Product extends Record<string, any> {
   id: string;
   title: string;
@@ -36,6 +43,8 @@ export interface Product extends Record<string, any> {
   rating: number;
   currency_id: string;
   sold_quantity: number;
+  promoted_products: ISimpleProduct[];
+  other_products: ISimpleProduct[];
   condition: string;
   available_quantity: number;
   attributes: IProductAttribute[];

@@ -14,6 +14,8 @@ import {RiMedalLine} from "react-icons/ri";
 
 import {Product} from "../types";
 
+import {OutsidePanelLayout} from "./layout/panelLayout";
+
 interface Props {
   seller_info: Product["seller_info"];
 }
@@ -27,7 +29,7 @@ const SellerInfoPanel: React.FC<Props> = ({seller_info}) => {
   const iconColorMode = useColorModeValue("black", "white");
 
   return (
-    <Stack borderColor="gray.300" borderRadius="md" borderWidth={1} p={4} spacing={4}>
+    <OutsidePanelLayout>
       <Heading fontSize="xl" fontWeight="500">
         Informacion sobre el vendedor
       </Heading>
@@ -78,7 +80,7 @@ const SellerInfoPanel: React.FC<Props> = ({seller_info}) => {
         </Stack>
       </Stack>
       <Link>Ver más datos del vendedor</Link>
-    </Stack>
+    </OutsidePanelLayout>
   );
 };
 

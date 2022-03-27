@@ -1,18 +1,13 @@
-import {Box, Button, Heading, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Box, Button, Heading, Image, StackDivider, Text} from "@chakra-ui/react";
 import React from "react";
 
 import {images} from "../../images";
 
+import {OutsidePanelLayout} from "./layout/panelLayout";
+
 const Level6PromoPanel = () => {
   return (
-    <Stack
-      borderColor="gray.300"
-      borderRadius="md"
-      borderWidth={1}
-      divider={<StackDivider />}
-      p={4}
-      spacing={8}
-    >
+    <OutsidePanelLayout divider={<StackDivider />} spacing={8}>
       <Heading fontSize="xl" fontWeight="500">
         Suscribete al nivel 6 de Mercado Puntos
       </Heading>
@@ -27,7 +22,7 @@ const Level6PromoPanel = () => {
       <Button colorScheme="messenger" variant="ghost">
         Suscribite al nivel 6
       </Button>
-    </Stack>
+    </OutsidePanelLayout>
   );
 };
 

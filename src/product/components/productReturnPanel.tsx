@@ -1,9 +1,11 @@
-import {Heading, Link, Stack, Text} from "@chakra-ui/react";
+import {Heading, Link, Text} from "@chakra-ui/react";
 import React from "react";
+
+import {InsidePanelLayout} from "./layout/panelLayout";
 
 const ProductReturnPanel = () => {
   return (
-    <Stack p={4} spacing={8}>
+    <InsidePanelLayout>
       <Heading fontSize="xl" fontWeight="500">
         Devolución gratis
       </Heading>
@@ -11,7 +13,7 @@ const ProductReturnPanel = () => {
         Tenes 30 dias desde que recibis el producto para devolverlo. ¡No importa el motivo!
       </Text>
       <Link>Conocer más sobre devoluciones</Link>
-    </Stack>
+    </InsidePanelLayout>
   );
 };
 

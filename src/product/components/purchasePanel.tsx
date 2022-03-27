@@ -22,6 +22,7 @@ import {parseCondition, parsePrice} from "../../utils";
 
 import UnitSelect from "./unitselect";
 import Stars from "./stars";
+import {OutsidePanelLayout} from "./layout/panelLayout";
 
 interface Props {
   title: string;
@@ -45,14 +46,7 @@ const PurchasePanel: React.FC<Props> = ({
   const cents = Math.trunc(decimalPart * 100);
 
   return (
-    <Stack
-      borderColor="gray.300"
-      borderRadius="md"
-      borderWidth={1}
-      direction="column"
-      p={6}
-      spacing={4}
-    >
+    <OutsidePanelLayout p={6}>
       <Text color="gray.500" fontSize="sm">
         {parseCondition(condition)} | {sold_quantity} Vendidos
       </Text>
@@ -72,7 +66,7 @@ const PurchasePanel: React.FC<Props> = ({
         <Text color="gray.500">119 Opiniones</Text>
       </Stack>
 
-      <Heading fontWeight="light">$ {parsePrice(price)}</Heading>
+      <Heading fontWeight="light">{parsePrice(price)}</Heading>
       <Text fontSize="lg" lineHeight={1} my={0}>
         en 12x de ${fees}
         <Text as="sup">{cents} </Text>
@@ -152,7 +146,7 @@ const PurchasePanel: React.FC<Props> = ({
           . Sumas 12 puntos.
         </ListItem>
       </List>
-    </Stack>
+    </OutsidePanelLayout>
   );
 };
 
