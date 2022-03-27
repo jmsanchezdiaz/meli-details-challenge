@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <Box bg={headerBgColorMode}>
-      <Container maxW="container.xl" p={2}>
+      <Container maxW="container.xl" pt={2}>
         <Stack alignItems="center" direction="row" justifyItems="space-around" spacing={20}>
           <Logo maxW="3xs" minW="120px" objectFit="contain" />
           <SearchBar />
@@ -21,7 +21,7 @@ const Header = () => {
             alt={images.disneypromo.alt}
             objectFit="contain"
             src={images.disneypromo.src}
-            w="xs"
+            w="350px"
           />
         </Stack>
         <Stack direction="row" mt={2} spacing={20}>

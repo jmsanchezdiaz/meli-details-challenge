@@ -10,6 +10,7 @@ const DarkmodeSwitch = () => {
       aria-label="darkmode switch"
       color="black"
       icon={colorMode === "dark" ? <Icon as={BiSun} /> : <Icon as={BiMoon} />}
+      minW="max-content"
       variant="unstyled"
       onClick={toggleColorMode}
     />

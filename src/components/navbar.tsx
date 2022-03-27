@@ -40,13 +40,14 @@ const Navbar = () => {
       <HStack alignItems="center" opacity={0.6} spacing={5}>
         {links.map((link, index) => (
           <CustomLink key={index} to={link.path}>
-            <HStack>
-              <Text color="black">{link.text}</Text> {link.icon && <Icon as={link.icon} />}
+            <HStack align="center" spacing={0}>
+              <Text color="black">{link.text}</Text>{" "}
+              {link.icon && <Icon as={link.icon} boxSize="25px" color="gray.400" />}
             </HStack>
           </CustomLink>
         ))}
       </HStack>
-      <HStack align="center" spacing={4}>
+      <HStack align="center" fontSize="sm" spacing={4}>
         <CustomLink color="black">Créa tu cuenta</CustomLink>
         <CustomLink color="black">Ingresá</CustomLink>
         <CustomLink color="black">Mis Compras</CustomLink>
@@ -54,6 +55,7 @@ const Navbar = () => {
           aria-label="carrito de compras"
           color="black"
           icon={<Icon as={AiOutlineShoppingCart} boxSize="20px" />}
+          minW="max-content"
           variant="unstyled"
         />
         <DarkmodeSwitch />
