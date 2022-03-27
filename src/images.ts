@@ -3,7 +3,7 @@ import mercadoCreditoIMG from "./assets/mcredito.png";
 import visaIMG from "./assets/tvisa.png";
 import naranjaIMG from "./assets/tnaranja.png";
 import americaexpressIMG from "./assets/texpress.png";
-import masterIMG from "./assets/Tmaster.png";
+import masterIMG from "./assets/tmaster.png";
 import visaDebitoIMG from "./assets/tvisadebito.png";
 import mastercardDebitoIMG from "./assets/tmasterdebito.png";
 import cabalDebitoIMG from "./assets/tcabaldebito.png";
