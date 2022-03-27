@@ -34,7 +34,7 @@ const ProductOpinion: React.FC<Props> = ({opinion, onLike, onDislike}) => {
   return (
     <Stack key={id}>
       <Stars rating={rating} />
-      <Heading fontSize="md" fontWeight="500">
+      <Heading fontSize="md" fontWeight="bold">
         {title}
       </Heading>
       <Box>

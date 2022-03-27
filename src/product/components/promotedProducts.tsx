@@ -14,7 +14,7 @@ const PromotedProducts: React.FC<Props> = ({promoted_products}) => {
   return (
     <InsidePanelLayout>
       <Stack align="center" direction="row" justify="space-between">
-        <Heading fontSize="xl" fontWeight="400">
+        <Heading fontSize="lg" fontWeight="400">
           Productos Promocionados
         </Heading>
         <Link>Anuncia aqui</Link>
