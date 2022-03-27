@@ -1,0 +1,15 @@
+src/assets/fonts/*.woff
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-woff
+
+src/assets/fonts/*.ttf
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-ttf
+
+/assets/fonts/*.woff
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-woff
+
+/assets/fonts/*.ttf
+  Access-Control-Allow-Origin: *
+  Content-Type: application/font-ttf
