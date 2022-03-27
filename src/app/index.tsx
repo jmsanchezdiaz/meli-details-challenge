@@ -2,6 +2,7 @@ import React from "react";
 import {Stack, Container, Box, useColorModeValue} from "@chakra-ui/react";
 
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 import Routes from "./routes";
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Routes />
         </Container>
       </Box>
+      <Footer />
     </Stack>
   );
 };
