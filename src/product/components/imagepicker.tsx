@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Stack, Button, Image, Box} from "@chakra-ui/react";
+import {Stack, Button, Image, Box, useColorModeValue} from "@chakra-ui/react";
 
 import {IProductPicture} from "../types";
 
@@ -8,6 +8,7 @@ interface Props {
 }
 
 const ImagePicker: React.FC<Props> = ({pictures}) => {
+  const borderColorMode = useColorModeValue("messenger.500", "darkmode.lightyellow");
   const [{id, url}] = pictures;
 
   const [selectedPicture, setSelectedPicture] = useState<IProductPicture>({
@@ -23,14 +24,20 @@ const ImagePicker: React.FC<Props> = ({pictures}) => {
         {pictures.map((img) => (
           <Button
             key={img.id}
-            borderRadius={0}
+            _focus={{
+              boxShadow: "none",
+              borderColor: borderColorMode,
+            }}
+            borderColor="transparent"
+            borderRadius="lg"
+            borderWidth={3}
             h={12}
             overflow="hidden"
             variant="unstyled"
             w={12}
             onClick={() => selectPicture(img)}
           >
-            <Image alt="product photo" src={img.url} />
+            <Image alt="product photo" borderRadius="md" h="full" src={img.url} w="full" />
           </Button>
         ))}
       </Stack>
