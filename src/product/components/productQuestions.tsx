@@ -59,21 +59,22 @@ const ProductQuestions: React.FC<Props> = ({questions}) => {
   };
 
   const filterQuestions = () => {
-    setProductQuestions(
-      questions.filter(
-        (question) =>
-          question.content.toLowerCase().includes(searchInput.trim().toLowerCase()) ||
-          (question.answer &&
-            question.answer.content.toLowerCase().includes(searchInput.trim().toLowerCase())),
-      ),
+    const filteredQuestions = questions.filter(
+      (question) =>
+        question.content.toLowerCase().includes(searchInput.trim().toLowerCase()) ||
+        (question.answer &&
+          question.answer.content.toLowerCase().includes(searchInput.trim().toLowerCase())),
     );
+
+    setProductQuestions(filteredQuestions.length > 0 ? filteredQuestions : fewQuestions);
+    reset();
   };
 
   const addQuestion = () => {
     if (!questionInput) return;
 
-    setProductQuestions((prevState) =>
-      prevState.concat({id: uuid(), content: questionInput.trim(), answer: null}),
+    setProductQuestions(
+      questions.concat({id: uuid(), content: questionInput.trim(), answer: null}),
     );
 
     reset();
